@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pvr-dg-VEO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch List Table View Controller-->
+        <scene sceneID="8cc-OE-e39">
+            <objects>
+                <viewController id="pvr-dg-VEO" customClass="LaunchListTableViewController" customModule="SpaceXLiveLaunch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Upw-Q7-KBI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.108303912" green="0.14346674079999999" blue="0.19601312279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8zo-Or-mna"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fek-CN-bXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="118"/>
+        </scene>
+        <!--Launch Detail View Controller-->
+        <scene sceneID="yRP-Ml-d70">
+            <objects>
+                <viewController storyboardIdentifier="detailsViewController" id="18x-4k-HXF" customClass="LaunchDetailViewController" customModule="SpaceXLiveLaunch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Tu-jp-aqb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload mass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EP-W6-rEn">
+                                <rect key="frame" x="135.5" y="755" width="143" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.36650207639999999" green="0.65854054689999997" blue="0.71329420799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocket name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kze-wi-jPK">
+                                <rect key="frame" x="139.5" y="706" width="135" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.36650207639999999" green="0.65854054689999997" blue="0.71329420799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q52-fQ-3tv">
+                                <rect key="frame" x="20" y="368" width="374" height="299"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1O-jM-yWh">
+                                <rect key="frame" x="183.5" y="311" width="47" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US0-2w-AzH" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="248"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="US0-2w-AzH" secondAttribute="height" multiplier="207:124" id="0Kn-nd-nbI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYl-K7-XNr">
+                                <rect key="frame" x="161.5" y="804" width="91" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Wikipedia"/>
+                                <connections>
+                                    <action selector="wikipediaButtonPressed:" destination="18x-4k-HXF" eventType="touchUpInside" id="Ece-Ak-wEO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.108303912" green="0.14346674079999999" blue="0.19601312279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m1O-jM-yWh" firstAttribute="centerX" secondItem="NUQ-YM-Jg4" secondAttribute="centerX" id="3xp-m5-Gio"/>
+                            <constraint firstItem="4EP-W6-rEn" firstAttribute="top" secondItem="Kze-wi-jPK" secondAttribute="bottom" constant="20" id="4oS-WQ-aQ1"/>
+                            <constraint firstItem="Kze-wi-jPK" firstAttribute="centerX" secondItem="NUQ-YM-Jg4" secondAttribute="centerX" id="7dV-cJ-VZp"/>
+                            <constraint firstItem="Kze-wi-jPK" firstAttribute="top" secondItem="Q52-fQ-3tv" secondAttribute="bottom" constant="39" id="Hed-Zx-a4p"/>
+                            <constraint firstItem="US0-2w-AzH" firstAttribute="centerX" secondItem="NUQ-YM-Jg4" secondAttribute="centerX" id="Jvl-Po-pBo"/>
+                            <constraint firstItem="Q52-fQ-3tv" firstAttribute="top" secondItem="m1O-jM-yWh" secondAttribute="bottom" constant="29" id="OvS-Dl-W9e"/>
+                            <constraint firstItem="NUQ-YM-Jg4" firstAttribute="bottom" secondItem="bYl-K7-XNr" secondAttribute="bottom" constant="20" id="Rzm-rq-DvQ"/>
+                            <constraint firstItem="Q52-fQ-3tv" firstAttribute="leading" secondItem="NUQ-YM-Jg4" secondAttribute="leading" constant="20" id="VS0-1x-2BQ"/>
+                            <constraint firstItem="US0-2w-AzH" firstAttribute="top" secondItem="NUQ-YM-Jg4" secondAttribute="top" id="Ziz-d1-6g9"/>
+                            <constraint firstItem="4EP-W6-rEn" firstAttribute="centerX" secondItem="NUQ-YM-Jg4" secondAttribute="centerX" id="gjJ-6V-6cZ"/>
+                            <constraint firstItem="NUQ-YM-Jg4" firstAttribute="bottom" secondItem="US0-2w-AzH" secondAttribute="bottom" constant="570" id="jet-Ma-mLM"/>
+                            <constraint firstItem="US0-2w-AzH" firstAttribute="width" secondItem="5Tu-jp-aqb" secondAttribute="width" id="jxL-wf-Plq"/>
+                            <constraint firstItem="bYl-K7-XNr" firstAttribute="centerX" secondItem="NUQ-YM-Jg4" secondAttribute="centerX" id="rho-UN-IYW"/>
+                            <constraint firstItem="bYl-K7-XNr" firstAttribute="top" secondItem="4EP-W6-rEn" secondAttribute="bottom" constant="20" id="sRQ-Vo-3qk"/>
+                            <constraint firstItem="NUQ-YM-Jg4" firstAttribute="trailing" secondItem="Q52-fQ-3tv" secondAttribute="trailing" constant="20" id="x6Q-wv-BmD"/>
+                            <constraint firstItem="m1O-jM-yWh" firstAttribute="top" secondItem="US0-2w-AzH" secondAttribute="bottom" constant="19" id="y8u-Tq-X7k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NUQ-YM-Jg4"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="m1O-jM-yWh" id="rkA-DO-lat"/>
+                        <outlet property="descriptionLabel" destination="Q52-fQ-3tv" id="CTZ-00-6Ho"/>
+                        <outlet property="payloadMassLabel" destination="4EP-W6-rEn" id="qCr-8b-RO0"/>
+                        <outlet property="rocketNameLabel" destination="Kze-wi-jPK" id="nQF-UE-T5K"/>
+                        <outlet property="youtubeView" destination="US0-2w-AzH" id="cTa-dd-OgC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hO7-kc-Qm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
